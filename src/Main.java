@@ -26,7 +26,9 @@ public class Main {
                     break;
                 case 1:
                     System.out.println("LADDER");
-                    playerPosition += diceNumber;
+                    if ( playerPosition + diceNumber <= 100){
+                        playerPosition += diceNumber;
+                    }
                     break;
                 case 2:
                     System.out.println("SNAKE");
