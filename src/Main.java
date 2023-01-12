@@ -31,6 +31,9 @@ public class Main {
                 case 2:
                     System.out.println("SNAKE");
                     playerPosition -= diceNumber;
+                    if (playerPosition < 0){
+                        playerPosition = 0;
+                    }
                     break;
             }
             System.out.println("Player position is " + playerPosition);
