@@ -1,10 +1,12 @@
 public class Main {
     static final int SATRTING_POSITION = 0;
     static final int WINNIG_POSITION = 100;
+    static int diceCount = 0;
     static int playerPosition = 0;
 
     static int dieRolled() {
         int diceNumber = (int) (((Math.random() * 10) % 6) + 1);
+        diceCount++;
         return diceNumber;
     }
 
@@ -41,6 +43,7 @@ public class Main {
             System.out.println("Player position is " + playerPosition);
         }
         System.out.println("Final Player Position " + playerPosition);
+        System.out.println("Total number of times the Die Rolled " + diceCount);
     }
 }
 
